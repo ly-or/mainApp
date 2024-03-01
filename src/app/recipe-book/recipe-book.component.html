@@ -1,0 +1,20 @@
+<div class="container-fluid">
+    <div class="col-md-5">
+        <app-recipe-list (addNew)="onAddNewClicked( $event)"></app-recipe-list>
+    </div>
+    <div class="col-md-7">
+        <!-- <app-recipe-detail  (newItemEvent)="addVlera($event)"></app-recipe-detail> -->
+        <app-recipe-detail  ></app-recipe-detail>
+        <!-- <ul>
+            <li *ngFor="let item of items">{{item}}</li>
+          </ul> -->
+    </div>
+</div>
+
+<div class="container-fluid">
+
+    <div class="col-md-6">
+       {{dataToShow.name}} - {{dataToShow.surname}}
+
+    </div>
+</div>

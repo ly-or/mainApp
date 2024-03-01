@@ -1,0 +1,17 @@
+
+    <div class="row">
+        <div class="col-xs-12">
+            <button (click)="addRecipe()" class="btn btn-success">New Recipe</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12" >
+            <app-recipe-item *ngFor="let recipe of recipes" [recipeData2]="recipe">{{recipe}}</app-recipe-item>
+
+            
+        </div>
+    </div>
+
+<!-- KRIJO 3 INPUTE MR EMER,DESC,IMAGEURL 
+NE KLIKIM TE BUTONIT (TEK RECIPE.DETAIL BEHET FORMA ME 3 INPUTE DHE BUTON "ADD ", JA KALOJME RECIPE.BOOK DHE NGA RECIE.BOOK DO KALOJE TEK LISTA"RecipeListModel") -->
