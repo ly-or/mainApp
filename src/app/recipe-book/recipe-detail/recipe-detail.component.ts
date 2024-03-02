@@ -11,12 +11,12 @@ export class RecipeDetailComponent {
   @Output() newItemEvent = new EventEmitter<{newName: any,newDescription: any,newImageURL: any}>();
 
 
-  // addVl(...arg: any){
+  addVl(arg: any){
 
-  //   this.newItemEvent.emit(arg)
-  //   // this.newItemEvent.emit(newDescription)
-  //   // this.newItemEvent.emit(newImageURL)
+    this.newItemEvent.emit(arg)
+    // this.newItemEvent.emit(newDescription)
+    // this.newItemEvent.emit(newImageURL)
 
-  // }
+  }
 
 }

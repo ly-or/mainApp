@@ -16,6 +16,11 @@ export class RecipeBookComponent {
     this.dataToShow = data
   }
 
+  addVlera(data: any){
+
+    console.log(data)
+
+  }
 
 
  
